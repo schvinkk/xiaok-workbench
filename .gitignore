@@ -1,0 +1,33 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+*.egg-info/
+
+# ---------- 运行时数据（本地离线版） ----------
+local/data/app.db
+local/data/app.db-journal
+local/data/uploads/*
+!local/data/uploads/.gitkeep
+local/data/*.log
+
+# ---------- 环境变量 / 密钥 ----------
+.env
+*.local
+
+# ---------- 编辑器 / IDE ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------- 操作系统 ----------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# ---------- 日志 ----------
+*.log

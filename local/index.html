@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5">
+<title>小K万能工作台 · 大学生就业风向标（云贵川桂）</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<!-- 移动端顶部栏 -->
+<header class="mobile-header">
+  <button class="menu-btn" onclick="toggleSidebar()" aria-label="菜单">☰</button>
+  <div class="brand-mini">🧭 小K万能工作台</div>
+</header>
+
+<div class="sidebar-scrim" id="sidebarScrim"></div>
+
+<div class="app">
+  <!-- 侧边栏 -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="logo">🧭</div>
+      <div>
+        <div class="t1">小K万能工作台</div>
+        <div class="t2">云贵川桂 · 大学生就业风向标</div>
+      </div>
+    </div>
+    <button class="nav-btn active" data-view="dashboard"><span class="ic">📊</span> 首页/发现</button>
+    <button class="nav-btn" data-view="resumes"><span class="ic">📄</span> 简历库</button>
+    <button class="nav-btn" data-view="platforms"><span class="ic">🔗</span> 平台中心</button>
+    <button class="nav-btn" data-view="jobs"><span class="ic">💼</span> 职位看板</button>
+    <button class="nav-btn" data-view="track"><span class="ic">📌</span> 投递追踪</button>
+    <button class="nav-btn" data-view="plans"><span class="ic">📅</span> 计划打卡</button>
+    <button class="nav-btn" data-view="match"><span class="ic">🎯</span> 智能匹配</button>
+    <button class="nav-btn" data-view="timeline"><span class="ic">🗓️</span> 时间线</button>
+    <button class="nav-btn" data-view="exams"><span class="ic">📚</span> 考试政策</button>
+    <button class="nav-btn" data-view="disability"><span class="ic">♿</span> 残疾人通道</button>
+    <button class="nav-btn" data-view="settings"><span class="ic">⚙️</span> 设置</button>
+
+    <div class="side-foot">
+      <!-- 账户区（可选登录，保存进度） -->
+      <div id="acctBox"></div>
+      <button class="btn ghost sm" style="width:100%;margin-top:9px;color:#eef0ff;border-color:rgba(255,255,255,.3)" onclick="clearMyData()">🗑️ 清空我的数据</button>
+      <div class="tiny" style="margin-top:8px;color:#c7cbef">公开可用 · 各自数据隔离 · 信息只存本机，绝不外传</div>
+    </div>
+  </aside>
+
+  <!-- 主区 -->
+  <main class="main" id="main">
+    <section class="view active" id="view-dashboard"></section>
+    <section class="view" id="view-resumes"></section>
+    <section class="view" id="view-platforms"></section>
+    <section class="view" id="view-jobs"></section>
+    <section class="view" id="view-track"></section>
+    <section class="view" id="view-plans"></section>
+    <section class="view" id="view-match"></section>
+    <section class="view" id="view-timeline"></section>
+    <section class="view" id="view-exams"></section>
+    <section class="view" id="view-disability"></section>
+    <section class="view" id="view-settings"></section>
+  </main>
+</div>
+
+<!-- 通用弹窗 -->
+<div class="modal-bg" id="modalBg">
+  <div class="modal" id="modalBox"></div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

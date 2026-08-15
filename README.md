@@ -115,7 +115,7 @@ python app.py              # 默认 http://localhost:3000
 | 变量 | 默认值 | 说明 |
 |---|---|---|
 | `PORT` | `3000` | 监听端口 |
-| `WB_PASS` | `kai666` | 公网部署时的访问口令（首页弹窗校验） |
+| `WB_PASS` | `<你的访问口令>` | 公网部署时的访问口令（首页弹窗校验），请自行设置强口令 |
 | `WB_SECRET` | `kai-workbench-secret` | Flask session 密钥，生产环境请改 |
 
 启动后浏览器打开 **http://localhost:3000**。
